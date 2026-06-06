@@ -1,3 +1,13 @@
+:root {
+  --sans: 'PT Sans';
+
+  --gap-page: 24px;
+}
+
+:root {
+  font-family: var(--sans);
+}
+
 body {
   margin: unset;
 }

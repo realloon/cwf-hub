@@ -1,8 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import AppHeader from '../components/AppHeader.astro'
+import AppHero from '../components/AppHero.astro'
 ---
 
 <Layout>
   <AppHeader />
+
+  <main>
+    <AppHero />
+  </main>
 </Layout>
+
+<style>
+  main {
+    padding-inline: var(--gap-page);
+  }
+</style>
