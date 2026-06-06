@@ -12,6 +12,10 @@ body {
   margin: unset;
 }
 
+main {
+  padding-inline: var(--gap-page);
+}
+
 /*  */
 h1,
 h2,
@@ -26,5 +30,14 @@ h6 {
 
 p {
   margin-block: unset;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 /*  */
