@@ -1,5 +1,6 @@
 # build output
 dist/
+src/assets/defs.json
 
 # generated types
 .astro/
