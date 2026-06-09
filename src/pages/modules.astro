@@ -2,11 +2,10 @@
 import defs from '../assets/defs.json'
 import Layout from '../layouts/Layout.astro'
 import PartFilter from '../components/PartFilter.vue'
+import ModuleList from '../components/ModuleList.vue'
 ---
 
 <Layout>
-  <h1>modules</h1>
-
   <PartFilter
     client:load
     parts={defs['CWF.PartDef'].map(def => ({
@@ -15,14 +14,7 @@ import PartFilter from '../components/PartFilter.vue'
     }))}
   />
 
-  {
-    defs.ThingDef.map(module => (
-      <section>
-        <h3>{module.label}</h3>
-        <pre>{JSON.stringify(module, null, 2)}</pre>
-      </section>
-    ))
-  }
+  <ModuleList moudles={defs.ThingDef.filter(thing => thing.modExtensions)} />
 </Layout>
 
 <style>

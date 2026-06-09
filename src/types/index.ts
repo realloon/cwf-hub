@@ -1,3 +1,21 @@
+export type ModuleDef = {
+  defName: string
+  label: string
+  graphicData: { texPath: string }
+  statBases: any
+  costList: Record<string, number>
+  recipeMaker: any
+  modExtensions: {
+    li: {
+      weaponTraitDef: string[]
+      part: PartDef['defName']
+      requiredWeaponTags: {
+        li: string[]
+      }
+    }[]
+  }
+}
+
 export type AdapterDef = {
   defName: string
   graphicData: any[]

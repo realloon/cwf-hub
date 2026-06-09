@@ -32,6 +32,11 @@ p {
   margin-block: unset;
 }
 
+label {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 a {
   color: inherit;
   text-decoration: unset;

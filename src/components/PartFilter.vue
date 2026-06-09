@@ -1,23 +1,35 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import useStroe from '../hooks/useStore'
 
-interface Props {
+defineProps<{
   parts: { id: string; label: string }[]
-}
+}>()
 
-defineProps<Props>()
-
-const selected = ref<string[]>([])
+const { filteredParts } = useStroe()
 </script>
 
 <template>
   <section>
-    <pre>{{ selected }}</pre>
     <label v-for="{ id, label } in parts">
       <span> {{ label }}</span>
-      <input type="checkbox" :name="id" :value="id" v-model="selected" />
+      <input type="checkbox" :name="id" :value="id" v-model="filteredParts" />
     </label>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+
+  span {
+    text-transform: capitalize;
+  }
+}
+</style>
