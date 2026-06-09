@@ -1,16 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro'
 import defs from '../assets/defs.json'
+import Layout from '../layouts/Layout.astro'
+import PartFilter from '../components/PartFilter.vue'
 ---
 
 <Layout>
   <h1>modules</h1>
 
-  <!-- WIP -->
-
-  <section>
-    {defs['CWF.PartDef'].map(def => <span>{def.label}</span>)}
-  </section>
+  <PartFilter
+    client:load
+    parts={defs['CWF.PartDef'].map(def => ({
+      id: def.defName,
+      label: def.label,
+    }))}
+  />
 
   {
     defs.ThingDef.map(module => (
@@ -22,4 +25,9 @@ import defs from '../assets/defs.json'
   }
 </Layout>
 
-<style></style>
+<style>
+  .parts {
+    display: flex;
+    gap: 4px;
+  }
+</style>
