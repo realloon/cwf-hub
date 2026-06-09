@@ -10,7 +10,7 @@ const filteredParts = ref<string[]>(parts.map(part => part.defName))
 </script>
 
 <template>
-  <form @change.prevent="emitter.emit('changeFilteredParts', filteredParts)">
+  <form @change="emitter.emit('changeFilteredParts', filteredParts)">
     <label v-for="{ defName, label } in parts">
       <span>{{ label }}</span>
       <input

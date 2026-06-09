@@ -19,11 +19,7 @@ const modules = defs.ThingDef.filter(
 
   emitter.on('changeFilteredParts', parts => {
     modules.forEach(module => {
-      if (parts.includes(module.dataset.part!)) {
-        module.style.display = 'unset'
-      } else {
-        module.style.display = 'none'
-      }
+      module.hidden = !parts.includes(module.dataset.part!)
     })
   })
 </script>
