@@ -23,6 +23,8 @@ const style = parts
 ---
 
 <Layout>
+  <style is:inline set:html={style}></style>
+
   <form>
     {
       parts.map(({ defName, label }) => (
@@ -83,8 +85,6 @@ const style = parts
       ))
     }
   </article>
-
-  <style is:inline set:html={style}></style>
 </Layout>
 
 <style>
@@ -92,14 +92,14 @@ const style = parts
     display: flex;
     flex-wrap: wrap;
     gap: 0 8px;
-  }
 
-  label {
-    display: flex;
-    align-items: center;
+    label {
+      display: flex;
+      align-items: center;
 
-    span {
-      text-transform: capitalize;
+      span {
+        text-transform: capitalize;
+      }
     }
   }
 
