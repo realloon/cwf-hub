@@ -1,7 +1,8 @@
 ---
 import defs from '../assets/defs.json'
 import Layout from '../layouts/Layout.astro'
-import PartFilter from '../components/PartFilter.vue'
+
+const parts = defs['CWF.PartDef']
 
 const modules = defs.ThingDef.filter(
   def => def.defName && def.modExtensions,
@@ -10,22 +11,34 @@ const modules = defs.ThingDef.filter(
   const trait = defs.WeaponTraitDef.find(trait => trait.defName === traitName)
   return Object.assign(module, trait)
 })
+
+const style = parts
+  .map(
+    ({ defName }) => `
+    main:has([data-part-filter="${defName}"]:checked) [data-part="${defName}"] {
+      display: block;
+    }`,
+  )
+  .join('\n')
 ---
 
-<script>
-  import emitter from '../utils/emitter'
-
-  const modules = document.querySelectorAll<HTMLElement>('[data-part]')
-
-  emitter.on('changeFilteredParts', parts => {
-    modules.forEach(module => {
-      module.hidden = !parts.includes(module.dataset.part!)
-    })
-  })
-</script>
-
 <Layout>
-  <PartFilter client:load parts={defs['CWF.PartDef']} />
+  <form>
+    {
+      parts.map(({ defName, label }) => (
+        <label>
+          <span>{label}</span>
+          <input
+            checked
+            data-part-filter={defName}
+            name="part"
+            type="checkbox"
+            value={defName}
+          />
+        </label>
+      ))
+    }
+  </form>
 
   <article>
     {
@@ -36,15 +49,31 @@ const modules = defs.ThingDef.filter(
           <h2>{module.label}</h2>
           <p>{module.description}</p>
 
-          {module.statOffsets &&
-            <h3>StatOffsets</h3>
-            <div class="stats">{Object.entries(module.statOffsets).map(([k,v])=> <p>{k}: {v}</p>)}</div>
-          }
+          {module.statOffsets && (
+            <>
+              <h3>StatOffsets</h3>
+              <div class="stats">
+                {Object.entries(module.statOffsets).map(([key, value]) => (
+                  <p>
+                    {key}: {value}
+                  </p>
+                ))}
+              </div>
+            </>
+          )}
 
-          {module.statFactors &&
-            <h3>StatFactors</h3>
-            <div class="stats">{Object.entries(module.statFactors).map(([k,v])=> <p>{k}: {v}</p>)}</div>
-          }
+          {module.statFactors && (
+            <>
+              <h3>StatFactors</h3>
+              <div class="stats">
+                {Object.entries(module.statFactors).map(([key, value]) => (
+                  <p>
+                    {key}: {value}
+                  </p>
+                ))}
+              </div>
+            </>
+          )}
 
           <details>
             <summary>Source</summary>
@@ -54,15 +83,36 @@ const modules = defs.ThingDef.filter(
       ))
     }
   </article>
+
+  <style is:inline set:html={style}></style>
 </Layout>
 
 <style>
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 8px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+
   article {
     margin-top: 16px;
   }
 
-  section:not(:last-of-type) {
-    margin-bottom: 24px;
+  section {
+    display: none;
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
   }
 
   h2 {
@@ -74,7 +124,8 @@ const modules = defs.ThingDef.filter(
     font-family: 'PT Mono';
   }
 
-  h3,details {
+  h3,
+  details {
     margin-top: 4px;
   }
 </style>
