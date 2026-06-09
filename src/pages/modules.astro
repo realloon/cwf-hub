@@ -1,11 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import defs from '../assets/defs.json'
 ---
 
 <Layout>
   <h1>modules</h1>
+
+  <!-- WIP -->
+
+  <section>
+    {defs['CWF.PartDef'].map(def => <span>{def.label}</span>)}
+  </section>
+
+  {
+    defs.ThingDef.map(module => (
+      <section>
+        <h3>{module.label}</h3>
+        <pre>{JSON.stringify(module, null, 2)}</pre>
+      </section>
+    ))
+  }
 </Layout>
 
-<style>
-
-</style>
+<style></style>
