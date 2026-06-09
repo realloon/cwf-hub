@@ -8,7 +8,7 @@ import PartFilter from '../components/PartFilter.vue'
   <PartFilter client:load parts={defs['CWF.PartDef']} />
 
   {
-    defs.WeaponTraitDef.map(def => (
+    defs.WeaponTraitDef.filter(def => def.defName).map(def => (
       <section>
         <details>
           <summary>{def.label}</summary>
