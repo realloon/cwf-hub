@@ -2,7 +2,7 @@
 import useStroe from '../hooks/useStore'
 
 defineProps<{
-  parts: { id: string; label: string }[]
+  parts: { defName: string; label: string }[]
 }>()
 
 const { filteredParts } = useStroe()
@@ -10,9 +10,14 @@ const { filteredParts } = useStroe()
 
 <template>
   <section>
-    <label v-for="{ id, label } in parts">
+    <label v-for="{ defName, label } in parts">
       <span> {{ label }}</span>
-      <input type="checkbox" :name="id" :value="id" v-model="filteredParts" />
+      <input
+        type="checkbox"
+        :name="defName"
+        :value="defName"
+        v-model="filteredParts"
+      />
     </label>
   </section>
 </template>
