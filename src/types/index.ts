@@ -6,14 +6,10 @@ export type ModuleDef = {
   costList: Record<string, number>
   recipeMaker: any
   modExtensions: {
-    li: {
-      weaponTraitDef: string[]
-      part: PartDef['defName']
-      requiredWeaponTags: {
-        li: string[]
-      }
-    }[]
-  }
+    weaponTraitDef: string[]
+    part: PartDef['defName']
+    requiredWeaponTags: string[]
+  }[]
 }
 
 export type AdapterDef = {
