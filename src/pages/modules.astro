@@ -3,23 +3,42 @@ import defs from '../assets/defs.json'
 import Layout from '../layouts/Layout.astro'
 import PartFilter from '../components/PartFilter.vue'
 
-const r = defs.ThingDef.filter(def => def.defName && def.modExtensions)
+const modules = defs.ThingDef.filter(
+  def => def.defName && def.modExtensions,
+).map(module => {
+  const traitName = module.modExtensions![0].weaponTraitDef
+  const trait = defs.WeaponTraitDef.find(trait => trait.defName === traitName)
+  return Object.assign(module, trait)
+})
 ---
+
+<script>
+  import emitter from '../utils/emitter'
+
+  const modules = document.querySelectorAll<HTMLElement>('[data-part]')
+
+  emitter.on('changeFilteredParts', parts => {
+    modules.forEach(module => {
+      if (parts.includes(module.dataset.part!)) {
+        module.style.display = 'unset'
+      } else {
+        module.style.display = 'none'
+      }
+    })
+  })
+</script>
 
 <Layout>
   <PartFilter client:load parts={defs['CWF.PartDef']} />
 
-  <!-- WIP -->
-  <pre>{JSON.stringify(r, null, 2)}</pre>
-
-  <!-- {
-    defs.WeaponTraitDef.filter(def => def.defName).map(def => (
-      <section data-part="xxx">
+  {
+    modules.map(module => (
+      <section data-part={(module.modExtensions![0] as { part: string }).part}>
         <details>
-          <summary>{def.label}</summary>
-          <pre>{JSON.stringify(def, null, 2)}</pre>
+          <summary>{module.label}</summary>
+          <pre>{JSON.stringify(module, null, 2)}</pre>
         </details>
       </section>
     ))
-  } -->
+  }
 </Layout>

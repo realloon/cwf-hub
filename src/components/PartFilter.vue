@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import useStroe from '../hooks/useStore'
+import { ref } from 'vue'
+import emitter from '../utils/emitter'
 
 const { parts } = defineProps<{
   parts: { defName: string; label: string }[]
 }>()
 
-const { filteredParts } = useStroe()
-
-filteredParts.value = parts.map(part => part.defName)
+const filteredParts = ref<string[]>(parts.map(part => part.defName))
 </script>
 
 <template>
-  <section>
+  <form @change.prevent="emitter.emit('changeFilteredParts', filteredParts)">
     <label v-for="{ defName, label } in parts">
-      <span> {{ label }}</span>
+      <span>{{ label }}</span>
       <input
         type="checkbox"
         :name="defName"
@@ -21,11 +20,11 @@ filteredParts.value = parts.map(part => part.defName)
         v-model="filteredParts"
       />
     </label>
-  </section>
+  </form>
 </template>
 
 <style scoped>
-section {
+form {
   display: flex;
   flex-wrap: wrap;
   gap: 0 8px;
