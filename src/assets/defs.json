@@ -1,0 +1,3374 @@
+{
+  "CWF.AdapterDef": [
+    {
+      "defName": "Gun_AssaultRifle",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/AssaultRifle/AssaultRifle",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_AssaultRifle",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Sight",
+                "offset": "(77, 175)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Barrel",
+                "offset": "(257, 146)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Grip",
+                "offset": "(31, 76)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Magazine",
+                "offset": "(119, 66)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/AssaultRifle/Stock",
+                "offset": "(-35, 129)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Underbarrel",
+              "baseTexture": {
+                "offset": "(206, 90)"
+              },
+              "layer": 2
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_RedDotScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/RedDotScope/RedDotScope"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(77, 174)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(77, 170)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope",
+            "offset": "(77, 170)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ExtendedBarrel/ForAssaultRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForAssaultRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGrip"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_GrenadeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(222, 97)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_EMPLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(222, 97)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_SmokeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(222, 97)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_IncendiaryLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(222, 97)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_CustomGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Grip/CustomGrip/ForAssaultRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TelescopicStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/TelescopicStock/ForAssaultRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_QuickMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/QuickMagazine/ForAssaultRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForAssaultRifle"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_BoltActionRifle",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/BoltActionRifle/BoltActionRifle",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_BoltActionRifle"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/BoltActionRifle/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(75, 149)"
+              },
+              "layer": 10
+            },
+            {
+              "part": "Underbarrel",
+              "baseTexture": {
+                "offset": "(182, 73)"
+              },
+              "layer": 15
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(72, 147)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(77, 174)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(88, 152)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(112, 154)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGrip"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(213, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(166, 75)"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_SniperRifle",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/SniperRifle/SniperRifle",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_SniperRifle"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ],
+          "defaultWeaponTraitDefs": [
+            "CWF_Trait_8xScope"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/SniperRifle/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(102, 147)"
+              },
+              "layer": 30
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/SniperRifle/Barrel",
+                "offset": "(81, -4)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/SniperRifle/Stock",
+                "offset": "(-61, 95)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Underbarrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/SniperRifle/Underbarrel",
+                "offset": "(191, 102)"
+              },
+              "layer": 25
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(102, 148)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(69, 152)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGrip",
+            "offset": "(150, 72)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(160, 73)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(188, 74)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/ShortenedStock/ForSniperRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForSniperRifle"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_Revolver",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/Revolver/Revolver",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_Handgun"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Revolver/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Revolver/Barrel",
+                "offset": "(227, 144)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(102, 189)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Revolver/Grip",
+                "offset": "(10, 92)"
+              },
+              "layer": 20
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(128, 187)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(116, 192)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(116, 186)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope",
+            "offset": "(147, 186)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ExtendedBarrel/ForRevolver",
+            "offset": "(227, 145)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForRevolver",
+            "offset": "(139, 144)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TacticalBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/TacticalBarrel/ForRevolver"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGripLong",
+            "offset": "(225, 109)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(239, 106)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(230, 110)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_GrenadeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(256, 119)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_EMPLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(256, 119)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_SmokeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(256, 119)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_IncendiaryLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(256, 119)"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_ChainShotgun",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/ChainShotgun/ChainShotgun",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_Shotgun",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChainShotgun/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(76, 189)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChainShotgun/Barrel",
+                "offset": "(250, 148)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChainShotgun/Grip",
+                "offset": "(36, 86)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChainShotgun/Magazine",
+                "offset": "(176, 130)"
+              },
+              "layer": 25
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChainShotgun/Stock",
+                "offset": "(-59, 119)"
+              },
+              "layer": 25
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(84, 181)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(83, 191)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(88, 187)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope",
+            "offset": "(102, 186)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForChainShotgun"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGrip",
+            "offset": "(248, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(264, 74)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(238, 76)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_GrenadeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(272, 86)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_EMPLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(272, 86)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_SmokeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(272, 86)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_IncendiaryLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(272, 86)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_FoldStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/FoldStock/FoldStock",
+            "offset": "(105, 180)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_QuickMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/QuickMagazine/ForChainShotgun"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForChainShotgun",
+            "offset": "(215, 130)"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_HeavySMG",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/HeavySMG/HeavySMG",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_SMG",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HeavySMG/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(139, 207)"
+              },
+              "layer": 25
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HeavySMG/Barrel",
+                "offset": "(275, 181)"
+              },
+              "layer": 5
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HeavySMG/Magazine",
+                "offset": "(179, 75)"
+              },
+              "layer": -1
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HeavySMG/Stock",
+                "offset": "(-45, 145)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HeavySMG/Grip",
+                "offset": "(47, 90)"
+              },
+              "layer": 20
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(95, 205)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(153, 216)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(108, 204)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope",
+            "offset": "(128, 204)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ExtendedBarrel/ForHeavySMG"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForHeavySMG"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGripLong",
+            "offset": "(273, 114)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(268, 111)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(239, 113)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_GrenadeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(274, 122)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_EMPLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(274, 122)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_SmokeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(274, 122)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_IncendiaryLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(274, 122)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_CustomGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Grip/CustomGrip/ForHeavySMG"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/ShortenedStock/ForHeavySMG",
+            "offset": "(-9, 145)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TelescopicStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/TelescopicStock/ForHeavySMG",
+            "offset": "(-9, 145)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForHeavySMG"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_LMG",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/LMG/LMG",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_LMG",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Magazine",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/LMG/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/LMG/Barrel",
+                "offset": "(239, 134)"
+              },
+              "layer": 5
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "offset": "(92, 164)"
+              },
+              "layer": 5
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/LMG/Magazine",
+                "offset": "(85, 167)"
+              },
+              "layer": 30
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/LMG/Stock",
+                "offset": "(-62, 124)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/LMG/Grip",
+                "offset": "(18, 81)"
+              },
+              "layer": 20
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_Holoscope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/Holoscope/Holoscope",
+            "offset": "(64, 163)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_2xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/2xScope/2xScope",
+            "offset": "(64, 167)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_4xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/4xScope/4xScope",
+            "offset": "(62, 162)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_8xScope",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Sight/8xScope/8xScope",
+            "offset": "(102, 161)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ExtendedBarrel/ForLMG",
+            "offset": "(239, 135)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForLMG",
+            "offset": "(231, 133)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TacticalBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/TacticalBarrel/ForLMG"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_VerticalGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/VerticalGrip/VerticalGrip",
+            "offset": "(171, 68)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TriangularGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/TriangularGrip/TriangularGrip",
+            "offset": "(195, 66)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_LaserSight",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/AimAssistance/AimAssistance",
+            "offset": "(182, 68)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_GrenadeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(210, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_EMPLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(210, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_SmokeLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(210, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_IncendiaryLauncher",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Unberbarrel/GrenadeLauncher/GrenadeLauncher",
+            "offset": "(210, 77)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ShortenedStock",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Stock/ShortenedStock/ForLMG",
+            "offset": "(-62, 128)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_QuickMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/QuickMagazine/ForLMG",
+            "offset": "(69, 206)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_BeltMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/BeltMagazine/BeltMagazine",
+            "offset": "(129, 150)",
+            "scale": 0.62
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_DrumMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/DrumMagazine/DrumMagazine",
+            "offset": "(95, 103)"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_Minigun",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/Minigun/Minigun",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_Minigun",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Grip",
+            "Magazine",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Minigun/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Minigun/Barrel",
+                "offset": "(274, 54)"
+              },
+              "layer": 5
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Minigun/Magazine",
+                "offset": "(18, 3)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/Minigun/Grip",
+                "offset": "(-67, 67)"
+              },
+              "layer": 10
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_ExtendedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ExtendedBarrel/ForMinigun",
+            "offset": "(271, 59)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_TacticalBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/TacticalBarrel/ForMinigun"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_CustomGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Grip/CustomGrip/ForMinigun",
+            "offset": "(-14, 65)"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_QuickMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/QuickMagazine/ForMinigun"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForMinigun"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Bow_Great",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/GreatBow/GreatBow",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_Bow"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Ammo"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "Gun_ChargeRifle",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/ChargeRifle/ChargeRifle",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_AssaultRifle",
+        "CWF_BurstFire",
+        "CWF_Charge"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChargeRifle/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Barrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChargeRifle/Barrel",
+                "offset": "(243, 135)"
+              },
+              "layer": 10
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChargeRifle/Sight",
+                "offset": "(36, 187)"
+              },
+              "layer": 10
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChargeRifle/Grip",
+                "offset": "(136, 95)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/ChargeRifle/Magazine",
+                "offset": "(0, 107)"
+              },
+              "layer": 25
+            },
+            {
+              "part": "Underbarrel",
+              "baseTexture": {
+                "offset": "(242, 135)"
+              },
+              "layer": 20
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_ShortenedBarrel",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Barrel/ShortenedBarrel/ForChargeRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_CustomGrip",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Grip/CustomGrip/ForChargeRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_QuickMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/QuickMagazine/ForChargeRifle"
+          }
+        },
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForChargeRifle"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_ChargeLance",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/ChargeLance/ChargeLance",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_ChargeLance",
+        "CWF_Charge"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Ammo"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "Gun_HellcatRifle",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/HellcatRifle/HellcatRifle",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_AssaultRifle",
+        "CWF_BurstFire"
+      ],
+      "comps": [
+        {
+          "supportParts": [
+            "Muzzle",
+            "Barrel",
+            "Receiver",
+            "Trigger",
+            "Stock",
+            "Grip",
+            "Sight",
+            "Magazine",
+            "Underbarrel",
+            "Ammo"
+          ]
+        },
+        {
+          "attachmentPoints": [
+            {
+              "part": "Receiver",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Receiver",
+                "offset": "(0, 0)"
+              },
+              "layer": 0
+            },
+            {
+              "part": "Sight",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Sight",
+                "offset": "(194, 176)"
+              },
+              "layer": 10
+            },
+            {
+              "part": "Grip",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Grip",
+                "offset": "(25, 87)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Magazine",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Magazine",
+                "offset": "(133, 78)"
+              },
+              "layer": 25
+            },
+            {
+              "part": "Stock",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Stock",
+                "offset": "(-46, 119)"
+              },
+              "layer": 20
+            },
+            {
+              "part": "Underbarrel",
+              "baseTexture": {
+                "texturePath": "CustomizeWeapon/Weapons/HellcatRifle/Underbarrel",
+                "offset": "(226, 85)"
+              },
+              "layer": 20
+            }
+          ]
+        }
+      ],
+      "moduleGraphicOverrides": [
+        {
+          "moduleDef": "CWF_Module_ExtendedMagazine",
+          "graphicData": {
+            "texturePath": "CustomizeWeapon/Modules/Magazine/ExtendedMagazine/ForHellcatRifle"
+          }
+        }
+      ]
+    },
+    {
+      "defName": "Gun_BeamRepeater",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Weapons/BeamRepeater/BeamRepeater",
+        "graphicClass": "Graphic_Single",
+        "shaderType": "CutoutComplex"
+      },
+      "weaponTags": [
+        "CWF_BeamRepeater"
+      ],
+      "comps": [
+        "",
+        {
+          "supportParts": [
+            "Stock",
+            "Grip",
+            "Sight"
+          ]
+        }
+      ]
+    }
+  ],
+  "ThingCategoryDef": [
+    {
+      "defName": "CWF_TraitModules",
+      "label": "weapon module",
+      "parent": "Manufactured",
+      "iconPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel_tmp"
+    }
+  ],
+  "DamageDef": [
+    {
+      "defName": "CWF_Bullet_TraitTox",
+      "label": "bullet",
+      "additionalHediffs": [
+        {
+          "hediff": "ToxicBuildup",
+          "severityPerDamageDealt": 0.015,
+          "victimSeverityScaling": "ToxicResistance",
+          "inverseStatScaling": true,
+          "victimSeverityScalingByInvBodySize": true
+        }
+      ],
+      "impactSoundType": "Toxic",
+      "damageEffecter": "Impact_Toxic"
+    },
+    {
+      "defName": "CWF_Bullet_TraitIncendiary",
+      "label": "bullet",
+      "igniteChanceByTargetFlammability": {
+        "points": [
+          "(0, 0)",
+          "(1, 0.3)"
+        ]
+      }
+    }
+  ],
+  "AbilityDef": [
+    {
+      "defName": "CWF_Ability_LaunchFragGrenade",
+      "label": "launch frag grenade",
+      "description": "Launch a grenade. Can be reloaded using steel.",
+      "iconPath": "CustomizeWeapon/Gizmos/LaunchFragGrenade",
+      "aiCanUse": true,
+      "verbProperties": {
+        "verbClass": "Verb_CastAbility",
+        "range": 12.9,
+        "warmupTime": 1.5,
+        "soundCast": "Shot_IncendiaryLauncher",
+        "ai_IsBuildingDestroyer": true,
+        "targetParams": {
+          "canTargetLocations": true
+        },
+        "rangedFireRulepack": "Combat_RangedFire_Thrown"
+      },
+      "comps": [
+        {
+          "projectileDef": "Proj_GrenadeFrag"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Ability_LaunchEMPShell",
+      "label": "launch EMP shell",
+      "description": "Launch a shell that releases a burst of electromagnetic energy, stunning mechanical targets. Can be reloaded using steel.",
+      "iconPath": "CustomizeWeapon/Gizmos/LaunchEMPShell",
+      "aiCanUse": true,
+      "verbProperties": {
+        "verbClass": "Verb_CastAbility",
+        "range": 23.9,
+        "warmupTime": 3.5,
+        "forcedMissRadius": 1.9,
+        "soundCast": "Shot_IncendiaryLauncher",
+        "soundCastTail": "GunTail_Medium",
+        "targetParams": {
+          "canTargetLocations": true
+        }
+      },
+      "comps": [
+        {
+          "projectileDef": "Bullet_EMPLauncher"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Ability_LaunchSmokeShell",
+      "label": "launch smoke shell",
+      "description": "Launch a smoke shell that obscures incoming shots and prevents turrets from locking on. Can be reloaded using steel.",
+      "iconPath": "CustomizeWeapon/Gizmos/LaunchSmokeShell",
+      "aiCanUse": true,
+      "verbProperties": {
+        "verbClass": "Verb_CastAbility",
+        "range": 23.9,
+        "warmupTime": 3.5,
+        "forcedMissRadius": 1.9,
+        "soundCast": "Shot_IncendiaryLauncher",
+        "soundCastTail": "GunTail_Medium",
+        "targetParams": {
+          "canTargetLocations": true
+        }
+      },
+      "comps": [
+        {
+          "projectileDef": "Bullet_SmokeLauncher"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Ability_LaunchIncendiaryShell",
+      "label": "launch incendiary shell",
+      "description": "Launch a shell that creates an explosion on impact, igniting everything nearby. Can be reloaded using chemfuel.",
+      "iconPath": "CustomizeWeapon/Gizmos/LaunchIncendiaryShell",
+      "aiCanUse": true,
+      "ai_IsIncendiary": true,
+      "verbProperties": {
+        "verbClass": "Verb_CastAbility",
+        "range": 23.9,
+        "warmupTime": 3.5,
+        "forcedMissRadius": 1.9,
+        "soundCast": "Shot_IncendiaryLauncher",
+        "soundCastTail": "GunTail_Medium",
+        "targetParams": {
+          "canTargetLocations": true
+        }
+      },
+      "comps": [
+        {
+          "projectileDef": "Bullet_IncendiaryLauncher"
+        }
+      ]
+    }
+  ],
+  "WorkGiverDef": [
+    {
+      "defName": "CWF_DoBillsWeaponModules",
+      "label": "craft weapon modules",
+      "giverClass": "WorkGiver_DoBill",
+      "workType": "Crafting",
+      "verb": "crafting module at",
+      "gerund": "crafting module at",
+      "priorityInType": 110,
+      "fixedBillGiverDefs": [
+        "CWF_Workbench"
+      ]
+    }
+  ],
+  "CWF.PartDef": [
+    {
+      "defName": "Receiver",
+      "label": "receiver",
+      "group": "Top",
+      "order": 0,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Receiver/ReceiverModule"
+    },
+    {
+      "defName": "Sight",
+      "label": "sight",
+      "group": "Top",
+      "order": 10,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Sight/SightModule"
+    },
+    {
+      "defName": "Barrel",
+      "label": "barrel",
+      "group": "Top",
+      "order": 30,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Barrel/BarrelModule"
+    },
+    {
+      "defName": "Stock",
+      "label": "stock",
+      "group": "Left",
+      "order": 0,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Stock/StockModule"
+    },
+    {
+      "defName": "Muzzle",
+      "label": "muzzle",
+      "group": "Right",
+      "order": 0,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Muzzle/MuzzleModule"
+    },
+    {
+      "defName": "Ammo",
+      "label": "ammo",
+      "group": "Right",
+      "order": 10,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Ammo/AmmoModule"
+    },
+    {
+      "defName": "Grip",
+      "label": "grip",
+      "group": "Bottom",
+      "order": 0,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Grip/GripModule"
+    },
+    {
+      "defName": "Trigger",
+      "label": "trigger",
+      "group": "Bottom",
+      "order": 10,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Trigger/TriggerModule"
+    },
+    {
+      "defName": "Magazine",
+      "label": "magazine",
+      "group": "Bottom",
+      "order": 20,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Magazine/MagazineModule"
+    },
+    {
+      "defName": "Underbarrel",
+      "label": "underbarrel",
+      "group": "Bottom",
+      "order": 30,
+      "fallbackTexturePath": "CustomizeWeapon/Modules/Unberbarrel/UnderbarrelModule"
+    }
+  ],
+  "ThingDef": [
+    {
+      "defName": "CWF_Workbench",
+      "label": "weapon module table",
+      "description": "weapon module table.",
+      "thingClass": "Building_WorkTable",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/ModuleWorkbench/ModuleWorkbench",
+        "graphicClass": "Graphic_Multi",
+        "drawSize": "(3.5, 1.5)",
+        "damageData": {
+          "cornerTL": "Damage/Corner",
+          "cornerTR": "Damage/Corner",
+          "cornerBL": "Damage/Corner",
+          "cornerBR": "Damage/Corner"
+        }
+      },
+      "castEdgeShadows": true,
+      "staticSunShadowHeight": 0.2,
+      "costList": {
+        "Steel": 100,
+        "ComponentIndustrial": 5
+      },
+      "altitudeLayer": "Building",
+      "fillPercent": 0.5,
+      "useHitPoints": "True",
+      "statBases": {
+        "WorkToBuild": 3000,
+        "MaxHitPoints": 180,
+        "Flammability": 1,
+        "Cleanliness": -2
+      },
+      "size": "(3, 1)",
+      "designationCategory": "Production",
+      "uiOrder": 2520,
+      "passability": "PassThroughOnly",
+      "pathCost": 50,
+      "hasInteractionCell": "True",
+      "interactionCellOffset": "(0, 0, -1)",
+      "surfaceType": "Item",
+      "constructionSkillPrerequisite": 4,
+      "inspectorTabs": [
+        "ITab_Bills"
+      ],
+      "comps": [
+        {
+          "linkableFacilities": [
+            "ToolCabinet"
+          ]
+        },
+        ""
+      ],
+      "building": {
+        "spawnedConceptLearnOpportunity": "BillsTab",
+        "workTableRoomRole": "Workshop",
+        "workTableNotInRoomRoleFactor": 0.8
+      },
+      "constructEffect": "ConstructMetal",
+      "researchPrerequisites": [
+        "Machining"
+      ],
+      "placeWorkers": [
+        "PlaceWorker_ShowFacilitiesConnections",
+        "PlaceWorker_PreventInteractionSpotOverlap"
+      ]
+    },
+    {
+      "defName": "CWF_Module_QuickMagazine",
+      "label": "quick magazine",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Magazine/Magazine"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_QuickMagazine",
+          "part": "Magazine",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun",
+            "CWF_ChargeLance"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ExtendedMagazine",
+      "label": "extended magazine",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Magazine/Magazine"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ExtendedMagazine",
+          "part": "Magazine",
+          "requiredWeaponTags": [
+            "CWF_BurstFire"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_BeltMagazine",
+      "label": "belt magazine",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Magazine/Magazine"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_BeltMagazine",
+          "part": "Magazine",
+          "rarity": "Rare",
+          "conditionalPartModifiers": [
+            {
+              "matcher": {
+                "weaponDefs": [
+                  "Gun_LMG"
+                ]
+              },
+              "enablesParts": [
+                "Sight"
+              ]
+            }
+          ],
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_SMG",
+            "CWF_LMG"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_DrumMagazine",
+      "label": "drum magazine",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Magazine/Magazine"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_DrumMagazine",
+          "part": "Magazine",
+          "rarity": "Rare",
+          "conditionalPartModifiers": [
+            {
+              "matcher": {
+                "weaponDefs": [
+                  "Gun_LMG"
+                ]
+              },
+              "enablesParts": [
+                "Sight"
+              ]
+            }
+          ],
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_SMG",
+            "CWF_LMG"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ShortenedStock",
+      "label": "shortened stock",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Stock/Stock"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ShortenedStock",
+          "part": "Stock"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_TelescopicStock",
+      "label": "telescopic stock",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Stock/Stock"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_TelescopicStock",
+          "part": "Stock"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_FoldStock",
+      "label": "fold stock",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Stock/Stock"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_FoldStock",
+          "part": "Stock"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_StabilizerBrace",
+      "label": "stabilizer brace",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Stock/Stock"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_StabilizerBrace",
+          "part": "Stock",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_RapidTrigger",
+      "label": "rapid trigger",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Trigger/Trigger"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_RapidTrigger",
+          "part": "Trigger",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ExtendedBarrel",
+      "label": "extended barrel",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Barrel/Barrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ExtendedBarrel",
+          "part": "Barrel",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ShortenedBarrel",
+      "label": "shortened barrel",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Barrel/Barrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ShortenedBarrel",
+          "part": "Barrel",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_TacticalBarrel",
+      "label": "tactical barrel",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Barrel/Barrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_TacticalBarrel",
+          "part": "Barrel",
+          "rarity": "Rare",
+          "conditionalPartModifiers": [
+            {
+              "matcher": {
+                "weaponDefs": [
+                  "Gun_LMG"
+                ]
+              },
+              "enablesParts": [
+                "Underbarrel"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "thingClass": "ThingWithComps",
+      "category": "Item",
+      "resourceReadoutPriority": "Middle",
+      "useHitPoints": true,
+      "selectable": true,
+      "graphicData": {
+        "graphicClass": "Graphic_Single",
+        "drawSize": 0.7
+      },
+      "statBases": {
+        "MaxHitPoints": 50,
+        "Mass": 0.2,
+        "Flammability": 0.2,
+        "DeteriorationRate": 2,
+        "MarketValue": 150
+      },
+      "recipeMaker": {
+        "workSpeedStat": "GeneralLaborSpeed",
+        "workSkill": "Crafting",
+        "recipeUsers": [
+          "CWF_Workbench"
+        ],
+        "skillRequirements": {
+          "Crafting": 5
+        },
+        "unfinishedThingDef": "UnfinishedComponent"
+      },
+      "altitudeLayer": "Item",
+      "stackLimit": 6,
+      "thingCategories": [
+        "CWF_TraitModules"
+      ],
+      "alwaysHaulable": true,
+      "drawGUIOverlay": true,
+      "rotatable": false,
+      "pathCost": 14,
+      "comps": [
+        "",
+        ""
+      ]
+    },
+    {
+      "defName": "CWF_Module_VerticalGrip",
+      "label": "vertical grip",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_VerticalGrip",
+          "part": "Underbarrel",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_TriangularGrip",
+      "label": "triangular grip",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_TriangularGrip",
+          "part": "Underbarrel",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_LaserSight",
+      "label": "laser sight",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_LaserSight",
+          "part": "Underbarrel",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_GrenadeLauncher",
+      "label": "grenade launcher",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_GrenadeLauncher",
+          "part": "Underbarrel",
+          "rarity": "Legendary",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_EMPLauncher",
+      "label": "EMP launcher",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_EMPLauncher",
+          "part": "Underbarrel",
+          "rarity": "Legendary",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_SmokeLauncher",
+      "label": "smoke launcher",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_SmokeLauncher",
+          "part": "Underbarrel",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_IncendiaryLauncher",
+      "label": "incendiary launcher",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Unberbarrel/Underbarrel"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_IncendiaryLauncher",
+          "part": "Underbarrel",
+          "rarity": "Legendary",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_Holoscope",
+      "label": "holoscope",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Sight/Sight"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_Holoscope",
+          "part": "Sight",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_RedDotScope",
+      "label": "red dot scope",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Sight/Sight"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_RedDotScope",
+          "part": "Sight",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_2xScope",
+      "label": "2x scope",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Sight/Sight"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_2xScope",
+          "part": "Sight",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_4xScope",
+      "label": "4x scope",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Sight/Sight"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_4xScope",
+          "part": "Sight",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_8xScope",
+      "label": "8x scope",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Sight/Sight"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "PrecisionRifling"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_8xScope",
+          "part": "Sight",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Handgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_HeavyRounds",
+      "label": "heavy rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_HeavyRounds",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_HollowPointRounds",
+      "label": "hollow point rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_HollowPointRounds",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ToxRounds",
+      "label": "tox rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ToxRounds",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_PiercingRounds",
+      "label": "piercing rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_PiercingRounds",
+          "part": "Ammo",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_IncendiaryRounds",
+      "label": "incendiary rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_IncendiaryRounds",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_HighPowerRounds",
+      "label": "high power rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_HighPowerRounds",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_BoltActionRifle",
+            "CWF_SniperRifle",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_EMPRounds",
+      "label": "EMP rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "ChargedShot"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_EMPRounds",
+          "part": "Ammo",
+          "rarity": "Legendary",
+          "requiredWeaponTags": [
+            "CWF_Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_PulseChargeRounds",
+      "label": "pulse charge rounds",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "ChargedShot"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_PulseChargeRounds",
+          "part": "Ammo",
+          "rarity": "Legendary",
+          "requiredWeaponTags": [
+            "CWF_Charge"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_IncendiaryPellets",
+      "label": "incendiary pellets",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_IncendiaryPellets",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_Shotgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_ToxPellets",
+      "label": "tox pellets",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_ToxPellets",
+          "part": "Ammo",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_Shotgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_BirdshotPellets",
+      "label": "birdshot pellets",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Ammo/Ammo"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_BirdshotPellets",
+          "part": "Ammo",
+          "requiredWeaponTags": [
+            "CWF_Shotgun"
+          ]
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_CustomGrip",
+      "label": "custom grip",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Grip/Grip"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_CustomGrip",
+          "part": "Grip"
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Module_RapidReceiver",
+      "label": "rapid receiver",
+      "graphicData": {
+        "texPath": "CustomizeWeapon/Modules/Receiver/Receiver"
+      },
+      "statBases": {
+        "WorkToMake": 1500
+      },
+      "costList": {
+        "Steel": 10,
+        "ComponentIndustrial": 1
+      },
+      "recipeMaker": {
+        "researchPrerequisite": "Gunsmithing"
+      },
+      "modExtensions": [
+        {
+          "weaponTraitDef": "CWF_Trait_RapidReceiver",
+          "part": "Receiver",
+          "rarity": "Rare",
+          "requiredWeaponTags": [
+            "CWF_AssaultRifle",
+            "CWF_SniperRifle",
+            "CWF_Shotgun",
+            "CWF_Handgun",
+            "CWF_SMG",
+            "CWF_LMG",
+            "CWF_Minigun"
+          ]
+        }
+      ]
+    }
+  ],
+  "JobDef": [
+    {
+      "defName": "CWF_ModifyWeaponSelf",
+      "description": "Modifying a weapon with a part.",
+      "driverClass": "CWF.JobDriver_ModifyWeaponSelf",
+      "reportString": "modifying TargetA.",
+      "allowOpportunisticPrefix": true
+    },
+    {
+      "defName": "CWF_ModifyWeaponHaul",
+      "description": "Modifying a weapon with a part.",
+      "driverClass": "CWF.JobDriver_ModifyWeaponHaul",
+      "reportString": "modifying TargetA."
+    },
+    {
+      "defName": "CWF_ReloadAbility",
+      "description": "Reloading a weapon ability.",
+      "driverClass": "CWF.JobDriver_ReloadAbility",
+      "reportString": "reloading TargetA."
+    }
+  ],
+  "StatCategoryDef": [
+    {
+      "defName": "CWF_WeaponModule",
+      "label": "weapon module",
+      "displayOrder": 500,
+      "displayAllByDefault": true
+    }
+  ],
+  "WeaponTraitDef": [
+    {
+      "defName": "CWF_Trait_QuickMagazine",
+      "label": "quick magazine",
+      "description": "This magazine uses an improved release mechanism. Reloads are faster, so downtime is shorter.",
+      "statFactors": {
+        "RangedWeapon_Cooldown": 0.8
+      }
+    },
+    {
+      "defName": "CWF_Trait_ExtendedMagazine",
+      "label": "extended magazine",
+      "description": "This magazine holds more ammo than the standard version, letting the weapon fire more shots per burst.",
+      "burstShotCountMultiplier": 1.25
+    },
+    {
+      "defName": "CWF_Trait_BeltMagazine",
+      "label": "belt magazine",
+      "description": "This belt feed provides a steady stream of ammo, allowing longer and more suppressive bursts.",
+      "burstShotCountMultiplier": 1.5
+    },
+    {
+      "defName": "CWF_Trait_DrumMagazine",
+      "label": "drum magazine",
+      "description": "This high-capacity drum holds far more ammo, allowing long and heavy bursts.",
+      "burstShotCountMultiplier": 1.5
+    },
+    {
+      "defName": "CWF_Trait_ShortenedStock",
+      "label": "shortened stock",
+      "description": "A shortened stock that reduces weight. The weapon becomes lighter, more compact, and easier to handle in tight spaces.",
+      "statFactors": {
+        "Mass": 0.9
+      }
+    },
+    {
+      "defName": "CWF_Trait_TelescopicStock",
+      "label": "telescopic stock",
+      "description": "An adjustable stock that improves fit and ergonomics. A steadier stance gives better accuracy.",
+      "statFactors": {
+        "Mass": 0.95,
+        "AccuracyTouch": 1.1,
+        "AccuracyShort": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_FoldStock",
+      "label": "fold stock",
+      "description": "A folding stock with a solid lockup. It provides a stable shoulder rest for accurate fire while also reducing weight a little.",
+      "statFactors": {
+        "Mass": 0.95,
+        "AccuracyMedium": 1.1,
+        "AccuracyLong": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_StabilizerBrace",
+      "label": "stabilizer brace",
+      "description": "A brace that supports the user's arm. It greatly improves stability and short-range accuracy.",
+      "statOffsets": "",
+      "statFactors": {
+        "AccuracyTouch": 1.2,
+        "AccuracyShort": 1.2
+      }
+    },
+    {
+      "defName": "CWF_Trait_RapidTrigger",
+      "label": "rapid trigger",
+      "description": "This trigger has a shorter pull and a faster reset. It lets the firing mechanism respond more quickly, increasing the burst rate.",
+      "burstShotSpeedMultiplier": 1.25
+    },
+    {
+      "defName": "CWF_Trait_ExtendedBarrel",
+      "label": "extended barrel",
+      "description": "A carefully made extended barrel. It increases muzzle velocity, letting rounds fly farther and improving effective range.",
+      "statOffsets": {
+        "RangedWeapon_RangeMultiplier": 0.15
+      }
+    },
+    {
+      "defName": "CWF_Trait_ShortenedBarrel",
+      "label": "shortened barrel",
+      "description": "A shortened barrel. It lowers muzzle velocity and range, but the lighter weight and better balance make the weapon faster to aim.",
+      "statOffsets": {
+        "Mass": -0.05,
+        "RangedWeapon_RangeMultiplier": -0.2,
+        "RangedWeapon_WarmupMultiplier": -0.15
+      }
+    },
+    {
+      "defName": "CWF_Trait_TacticalBarrel",
+      "label": "tactical barrel",
+      "description": "A redesigned barrel built for ergonomics and handling. Its lighter profile reduces weight and makes the weapon quicker to steady.",
+      "statOffsets": {
+        "Mass": -0.05,
+        "RangedWeapon_WarmupMultiplier": -0.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_VerticalGrip",
+      "label": "vertical grip",
+      "description": "A vertical foregrip that gives the shooter a steadier hold. It improves control and close-range accuracy.",
+      "statFactors": {
+        "AccuracyTouch": 1.1,
+        "AccuracyShort": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_TriangularGrip",
+      "label": "triangular grip",
+      "description": "An ergonomic foregrip that improves handling. It helps the shooter ready the weapon faster and steadies point-blank shots.",
+      "statOffsets": {
+        "RangedWeapon_WarmupMultiplier": -0.05
+      },
+      "statFactors": {
+        "AccuracyTouch": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_LaserSight",
+      "label": "laser sight",
+      "description": "A laser sight that projects a visible dot onto the target. It speeds up aiming and improves accuracy at close to medium range.",
+      "statOffsets": {
+        "RangedWeapon_WarmupMultiplier": -0.2
+      },
+      "statFactors": {
+        "AccuracyTouch": 1.1,
+        "AccuracyShort": 1.1,
+        "AccuracyMedium": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_GrenadeLauncher",
+      "label": "grenade launcher",
+      "description": "This launcher fires a single high-explosive grenade for strong area damage. It must be reloaded after each shot.",
+      "abilityProps": {
+        "abilityDef": "CWF_Ability_LaunchFragGrenade",
+        "maxCharges": 1,
+        "soundReload": "Standard_Reload",
+        "chargeNoun": "grenade",
+        "ammoDef": "Steel",
+        "ammoCountPerCharge": 25,
+        "baseReloadTicks": 60
+      }
+    },
+    {
+      "defName": "CWF_Trait_EMPLauncher",
+      "label": "EMP cannon",
+      "description": "This launcher fires EMP shells that stun mechanoids and disable electronics. It can fire twice before reloading.",
+      "abilityProps": {
+        "abilityDef": "CWF_Ability_LaunchEMPShell",
+        "maxCharges": 2,
+        "soundReload": "Standard_Reload",
+        "chargeNoun": "shell",
+        "ammoDef": "Steel",
+        "ammoCountPerCharge": 15,
+        "baseReloadTicks": 60
+      }
+    },
+    {
+      "defName": "CWF_Trait_SmokeLauncher",
+      "label": "smoke launcher",
+      "description": "This launcher fires smoke shells that create a dense cloud on impact. It can fire twice before reloading.",
+      "abilityProps": {
+        "abilityDef": "CWF_Ability_LaunchSmokeShell",
+        "maxCharges": 2,
+        "soundReload": "Standard_Reload",
+        "chargeNoun": "shell",
+        "ammoDef": "Steel",
+        "ammoCountPerCharge": 15,
+        "baseReloadTicks": 60
+      }
+    },
+    {
+      "defName": "CWF_Trait_IncendiaryLauncher",
+      "label": "incendiary launcher",
+      "description": "This launcher fires a single incendiary shell that spreads fire on impact. It must be reloaded after each shot.",
+      "abilityProps": {
+        "abilityDef": "CWF_Ability_LaunchIncendiaryShell",
+        "maxCharges": 1,
+        "soundReload": "Standard_Reload",
+        "chargeNoun": "shell",
+        "ammoDef": "Chemfuel",
+        "ammoCountPerCharge": 15,
+        "baseReloadTicks": 60
+      }
+    },
+    {
+      "defName": "CWF_Trait_Holoscope",
+      "label": "holoscope",
+      "description": "An advanced holographic sight. Its clear reticle speeds up target acquisition and improves accuracy at close to medium range.",
+      "statOffsets": {
+        "RangedWeapon_WarmupMultiplier": -0.2
+      },
+      "statFactors": {
+        "AccuracyTouch": 1.15,
+        "AccuracyShort": 1.15,
+        "AccuracyMedium": 1.15
+      }
+    },
+    {
+      "defName": "CWF_Trait_RedDotScope",
+      "label": "red dot scope",
+      "description": "A red dot sight with a bright aiming point. It simplifies aiming and improves accuracy at all effective ranges.",
+      "statFactors": {
+        "AccuracyTouch": 1.15,
+        "AccuracyShort": 1.15,
+        "AccuracyMedium": 1.15,
+        "AccuracyLong": 1.15
+      }
+    },
+    {
+      "defName": "CWF_Trait_2xScope",
+      "label": "2x scope",
+      "description": "A 2x optic that makes targets larger and clearer. It helps with precise shots at medium range.",
+      "statFactors": {
+        "AccuracyTouch": 1.3,
+        "AccuracyShort": 1.3,
+        "AccuracyMedium": 1.2
+      }
+    },
+    {
+      "defName": "CWF_Trait_4xScope",
+      "label": "4x scope",
+      "description": "A 4x optic built for medium to long range. It helps identify distant targets and slightly extends effective range.",
+      "statFactors": {
+        "AccuracyTouch": 1.3,
+        "AccuracyShort": 1.3,
+        "AccuracyMedium": 1.3,
+        "RangedWeapon_RangeMultiplier": 1.05
+      }
+    },
+    {
+      "defName": "CWF_Trait_8xScope",
+      "label": "8x scope",
+      "description": "An 8x optic for long-range precision. Its high magnification helps the shooter hit targets near the weapon's range limit.",
+      "statFactors": {
+        "AccuracyTouch": 1.3,
+        "AccuracyShort": 1.3,
+        "AccuracyMedium": 1.3,
+        "AccuracyLong": 1.2,
+        "RangedWeapon_RangeMultiplier": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_HeavyRounds",
+      "label": "heavy rounds",
+      "description": "Specialized rounds with heavier bullets. Their stronger impact greatly increases stopping power and slightly improves damage.",
+      "statOffsets": {
+        "RangedWeapon_DamageMultiplier": 0.1
+      },
+      "additionalStoppingPower": 1.5
+    },
+    {
+      "defName": "CWF_Trait_HollowPointRounds",
+      "label": "hollow point rounds",
+      "description": "Hollow point rounds designed to expand on impact. They cause more severe wounds and greatly increase damage.",
+      "statOffsets": {
+        "RangedWeapon_DamageMultiplier": 0.2
+      }
+    },
+    {
+      "defName": "CWF_Trait_ToxRounds",
+      "label": "tox rounds",
+      "description": "Rounds coated with a potent toxin. They wound the target and inflict toxic buildup.",
+      "damageDefOverride": "CWF_Bullet_TraitTox"
+    },
+    {
+      "defName": "CWF_Trait_PiercingRounds",
+      "label": "piercing rounds",
+      "description": "Rounds with a dense, hardened core made to punch through armor. They improve armor penetration.",
+      "statOffsets": {
+        "RangedWeapon_ArmorPenetrationMultiplier": 0.14
+      }
+    },
+    {
+      "defName": "CWF_Trait_IncendiaryRounds",
+      "label": "incendiary rounds",
+      "description": "Rounds loaded with an incendiary compound. They burst into flame on impact, causing burns and starting fires.",
+      "damageDefOverride": "CWF_Bullet_TraitIncendiary"
+    },
+    {
+      "defName": "CWF_Trait_EMPRounds",
+      "label": "EMP rounds",
+      "description": "Rounds fitted with micro-capacitors. They release an electromagnetic pulse on impact that disrupts electronics and stuns mechanoids.",
+      "extraDamages": [
+        {
+          "def": "EMP",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "defName": "CWF_Trait_HighPowerRounds",
+      "label": "high power rounds",
+      "description": "These rounds use a powerful propellant charge. They deal more damage, hit harder, and penetrate armor better, but the heavier recoil hurts accuracy.",
+      "statOffsets": {
+        "RangedWeapon_DamageMultiplier": 0.3,
+        "RangedWeapon_ArmorPenetrationMultiplier": 0.15
+      },
+      "statFactors": {
+        "AccuracyTouch": 0.9,
+        "AccuracyShort": 0.9,
+        "AccuracyMedium": 0.9,
+        "AccuracyLong": 0.9
+      }
+    },
+    {
+      "defName": "CWF_Trait_PulseChargeRounds",
+      "label": "pulse charge rounds",
+      "description": "Advanced rounds with an unstable energy cell. They deliver high damage and strong armor penetration.",
+      "statOffsets": {
+        "RangedWeapon_DamageMultiplier": 0.25,
+        "RangedWeapon_ArmorPenetrationMultiplier": 0.15
+      }
+    },
+    {
+      "defName": "CWF_Trait_IncendiaryPellets",
+      "label": "incendiary pellets",
+      "description": "Pellets filled with incendiary material. They scatter burning fragments on impact and are likely to ignite the target.",
+      "damageDefOverride": "CWF_Bullet_TraitIncendiary"
+    },
+    {
+      "defName": "CWF_Trait_ToxPellets",
+      "label": "tox pellets",
+      "description": "Pellets filled with toxin. They burst into toxic fragments on impact and quickly build up poison.",
+      "damageDefOverride": "CWF_Bullet_TraitTox"
+    },
+    {
+      "defName": "CWF_Trait_BirdshotPellets",
+      "label": "birdshot pellets",
+      "description": "Small, light pellets that spread in a cone. They are very effective up close, but lose power quickly and struggle against armor.",
+      "statOffsets": {
+        "RangedWeapon_ArmorPenetrationMultiplier": -0.25
+      },
+      "statFactors": {
+        "AccuracyTouch": 1.3,
+        "AccuracyShort": 1.2,
+        "AccuracyMedium": 0.9,
+        "AccuracyLong": 0.9
+      }
+    },
+    {
+      "commonality": 1,
+      "statOffsets": {
+        "MarketValue": 50,
+        "Mass": 0.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_CustomGrip",
+      "label": "custom grip",
+      "description": "An ergonomic custom grip. It gives better control and improves short-range accuracy.",
+      "statFactors": {
+        "AccuracyTouch": 1.1,
+        "AccuracyShort": 1.1
+      }
+    },
+    {
+      "defName": "CWF_Trait_RapidReceiver",
+      "label": "rapid receiver",
+      "description": "This receiver has been finely tuned. Lighter moving parts let the weapon cycle faster and fire bursts more quickly.",
+      "burstShotSpeedMultiplier": 1.5
+    }
+  ]
+}
