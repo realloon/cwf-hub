@@ -27,14 +27,54 @@ const modules = defs.ThingDef.filter(
 <Layout>
   <PartFilter client:load parts={defs['CWF.PartDef']} />
 
-  {
-    modules.map(module => (
-      <section data-part={(module.modExtensions![0] as { part: string }).part}>
-        <details>
-          <summary>{module.label}</summary>
-          <pre>{JSON.stringify(module, null, 2)}</pre>
-        </details>
-      </section>
-    ))
-  }
+  <article>
+    {
+      modules.map(module => (
+        <section
+          data-part={(module.modExtensions![0] as { part: string }).part}
+        >
+          <h2>{module.label}</h2>
+          <p>{module.description}</p>
+
+          {module.statOffsets &&
+            <h3>StatOffsets</h3>
+            <div class="stats">{Object.entries(module.statOffsets).map(([k,v])=> <p>{k}: {v}</p>)}</div>
+          }
+
+          {module.statFactors &&
+            <h3>StatFactors</h3>
+            <div class="stats">{Object.entries(module.statFactors).map(([k,v])=> <p>{k}: {v}</p>)}</div>
+          }
+
+          <details>
+            <summary>Source</summary>
+            <pre>{JSON.stringify(module, null, 2)}</pre>
+          </details>
+        </section>
+      ))
+    }
+  </article>
 </Layout>
+
+<style>
+  article {
+    margin-top: 16px;
+  }
+
+  section:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    text-transform: capitalize;
+  }
+
+  .stats {
+    font-family: 'PT Mono';
+  }
+
+  h3,details {
+    margin-top: 4px;
+  }
+</style>

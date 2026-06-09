@@ -33,6 +33,13 @@ form {
 label {
   display: flex;
   align-items: center;
+  opacity: 0.7;
+  transition: 0.2s;
+
+  &:has(:checked),
+  &:hover {
+    opacity: 1;
+  }
 
   span {
     text-transform: capitalize;
