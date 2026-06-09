@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import useStroe from '../hooks/useStore'
 
-defineProps<{
+const { parts } = defineProps<{
   parts: { defName: string; label: string }[]
 }>()
 
 const { filteredParts } = useStroe()
+
+filteredParts.value = parts.map(part => part.defName)
 </script>
 
 <template>

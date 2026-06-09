@@ -11,7 +11,7 @@ import PartFilter from '../components/PartFilter.vue'
     defs.WeaponTraitDef.map(def => (
       <section>
         <details>
-          <summary>{def.defName}</summary>
+          <summary>{def.label}</summary>
           <pre>{JSON.stringify(def, null, 2)}</pre>
         </details>
       </section>
