@@ -2,19 +2,24 @@
 import defs from '../assets/defs.json'
 import Layout from '../layouts/Layout.astro'
 import PartFilter from '../components/PartFilter.vue'
+
+const r = defs.ThingDef.filter(def => def.defName && def.modExtensions)
 ---
 
 <Layout>
   <PartFilter client:load parts={defs['CWF.PartDef']} />
 
-  {
+  <!-- WIP -->
+  <pre>{JSON.stringify(r, null, 2)}</pre>
+
+  <!-- {
     defs.WeaponTraitDef.filter(def => def.defName).map(def => (
-      <section>
+      <section data-part="xxx">
         <details>
           <summary>{def.label}</summary>
           <pre>{JSON.stringify(def, null, 2)}</pre>
         </details>
       </section>
     ))
-  }
+  } -->
 </Layout>
